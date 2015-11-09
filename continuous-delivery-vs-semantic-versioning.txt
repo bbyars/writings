@@ -1,0 +1,107 @@
+== Continuous Delivery and Semantic Versioning: A Broken Relationship
+
+I chanced upon Semantic Versioning and Continuous Delivery the other day.  In truth, they were arguing so loudly at each other that it was hard to miss them.
+
+"Fellows, why don't you calm down and tell me what's bothering you," I offered.  Surprised at the interruption, they disengaged and caught their breath.
+
+Semantic Versioning started, saying that you should always use a MAJOR.MINOR.PATCH for your version.  You're free to add other stuff to the right of PATCH, but it kinda doesn't matter.  Anything you add isn't part of the _real_ version, and you should delimit it with punctuation other than dots to declare it's irrelevancy to the rest of the world.
+
+"Metadata," he said, the slightest of sneers detectable in his voice.
+
+Continuous Delivery countered that, for each and every build to be a potential release candidate, then each and every build should get it's own version.  He started talking about deployment pipelines and feedback cycles, but it was a little long-winded for my tastes.  I perked up when he suggested using the build number from your CI tool as part of your version, to ensure that each build gets a unique version number.
+
+"That's all well and good." Semantic Versioning said, "Add as much BUILD METADATA as you want to the version.  Just make sure to increment at least the PATCH when you're ready to deploy a new version."
+
+"A _real_ version," he added, as if to make a point.
+
+"But a new build that passes all verifications _is_ a real version," Continuous Delivery explained.
+
+"I suppose it could be a PRERELEASE version, if you wanted.  It all works beautifully -- as soon as you're ready to release, the release version has precedence over all the prereleases with the same MAJOR.MINOR.PATCH."
+
+"A pearl of fleece?"
+
+"A PRERELEASE."
+
+"What's a ree-ree lease?" Continuous Delivery asked, the furrows over his brows hinting at his discomfiture.
+
+"Ugh, you see what I'm working with?"  Semantic Versioning looked at me with a look of exasperation on his face.  "It's the stuff you just use for testing."
+
+"Why would anyone do that?" It was Continuous Delivery's turn to look dismissive.
+
+"Look, use it or not.  Just make sure to increment at least the PATCH when you release."
+
+"OK fine," said Continuous Delivery.  "Let's just put the build number in the PATCH position."
+
+"That's not what PATCH means," Semantic Versioning explained, pointing to a flip chart that diagrammed the situation beautifully.  "And besides, every time someone increments a number, you have to reset all the numbers to the right back to 0."
+
+"At least all the _real_ numbers," he muttered.
+
+Things were clearly getting out of control, and it was at this point that I jumped in.  Mediation was clearly required, but I had to admit that, at first pass, their differences seemed irreconciliable.
+
+== A Philosophical Impasse
+
+In their purest forms, continuous delivery (CD) and semantic versioning are incompatible.  It sounds somewhat tacky to say that in polite company, but it's an undeniable truth.  To see why, we'll take a brief detour into the philosophies of the two models.
+
+=== Continuous Delivery
+
+Continuous delivery, first described in the excellent book by Jez Humble and Dave Farley, is an approach that extends agility into the release process.  CD is a very broad topic, encompassing automation, testing, development practices, and culture, but for our purposes we care only about one principle of CD.  It's an important principle too, maybe the _most important_ principle.  Like many profound statements, it sounds simple, but from this one principle, all the practices of continuous delivery can be derived.
+
+_Software should always be production-ready._
+
+That's it.  In a CD world, you should be able to take any commit that passes the verifications in your deployment pipeline into production.  For most organizations, this raises all kinds of questions:
+
+"What about work-in-progress?  I'm not ready to show this to an end user."  Use feature flags to hide it.
+
+"What about end-to-end testing?"  Automate as much of your testing as possible, and re-examine your architecture and your testing strategy to allow independent releases.
+
+"What about release outages?  Aren't we just increasing the risk?"  Actually, we're decreasing the risk (add link).  But you will need to invest in blue-green or canary deployments and a production immune system.
+
+"But I'm not ready to set my release version yet!"  Ah, yes that is a problem.
+
+_The very notion of "pre-release" doesn't make any sense in a CD world._
+
+The CD book calls this out in the context of maven SNAPSHOTs, which was a maven way of creating pre-releases.  The problem is that you verify a binary through your CD pipeline (which allows for manual tests as well as automated), but then you're expected to re-compile a new binary just to set the version.
+
+=== Semantic Versioning
+
+Semantic Versioning, as defined by the specification at semver.org, is an attempt at decreasing the pain of dependency hell by communicating intent through your versioning scheme.  Versions are based on your public API (or public interface), and the MAJOR, MINOR, and PATCH increments describe breaking API changes, backwards compatible functionality changes, and backwards compatible bug fixes, respectively.  Importantly, when you increment a MAJOR version, the MINOR and PATCH versions must be reset to 0, and similarly when you update a MINOR version, the PATCH must be reset to 0.
+
+Among the specification's raison d'etres is that it makes building tool support much easier because it very clearly defines version precedence.  Version 2.0.0 is greater than 1.19.23, which is greater than 1.18.38.  Semantic Versioning allows for PRERELEASE versions separated by a hyphen (e.g. 1.0.0-alpha.432) and BUILD METADATA to be added to the version behind a plus sign (e.g. 1.0.0+154).  However, while special provisions have been made to account for PRERELEASE version precedence, BUILD METADATA does not factor into version precedence at all
+
+[research all the dynamic version operators in rubygems, , gradle, nuget]
+
+semver 2.0 supports numeric sorting in prerelease (unlike semver 1.0?)
+
+semver 1.0 says each version element must increase by increments of one
+ (semver 2.0 relaxes the increment of one constraint)
+semver 1.0 ascii sorts prerelease
+semver 1.0 and 2.0 says increment PATCH ONLY if bug fix introduced
+semver 1.0 and 2.0 say minor may be bumped on improvements in private code
+  - impacts usage of ~ or ^ operator for dynamic versions?
+
+nuget supports semver and prerelease versions (https://docs.nuget.org/create/versioning)
+ but sorts prerelease in lexicographic, not numeric order and doesn't display them by default (semver 1.0)
+ 
+gemnasium?
+php composer
+- https://github.com/composer/composer/blob/master/doc/02-libraries.md
+- a package version of that tag will be created. It should match 'X.Y.Z' or 'vX.Y.Z', with an optional suffix of -patch (-p), -alpha (-a), -beta (-b) or -RC. The suffix can also be followed by a number.
+
+python pip
+
+meteor (http://docs.meteor.com/#/full/packagedescription) = strict
+
+=== Possible Options
+
+
+-- Use semver spec exactly, add build number as classifier (breaks CD, basically SNAPSHOT approach)
+-- Old Microsoft-style four version syntax (much better for CD, but not tool supported based on semver) (https://msdn.microsoft.com/en-us/library/51ket42z(v=vs.110).aspx)
+-- Use build number for patch (or minor), reset to 0 on minor (or major) bump (sort of semver, but skips patches in between releases and ugly to maintain).  according to spec, minor is bettir, but i sit on ths idiot side of assholes akd idiots
+-- Use build number for patch, never reset to 0 (breaks semver spec, but should work with tooling)
+-- Change semver 2.1.0 to allow the PATCH to not reset to 0 and loosen the definition to not adding functionality to the public API.  The great news about this is that it can be a non-breaking change
+
+- Summary: Treat semver as advice and CD as a journey.
+
+https://gist.github.com/jashkenas/cbd2b088e20279ae2c8e as critique of pure semver
+
+
