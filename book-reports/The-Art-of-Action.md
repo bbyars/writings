@@ -3,6 +3,8 @@
 - Plans -> Actions (Alignment)
 - Actions -> Outcomes (Effects)
 
+![3 gaps](/images/Three-Gaps.jpg]
+
 Common Responses
 - Plans -> Outcomes ==> get more detailed information
 - Plans -> Actions ==> Get more detailed instructions

@@ -1,4 +1,6 @@
-Story-telling approaches:
+
+## Story-telling approaches
+
 * Bottom Line Up Front (BLUF) - start with the resolution
     * ONLY do this if listeners are extremely anxious and if you are reasonably certain your audience will easily understand and readily accept your recommendation
 * Situation - Complication - Resolution (SCR)
@@ -16,7 +18,7 @@ Story-telling approaches:
 * The Pilot - Results - Scale Framework
     * A variant of the SCR where the pilot (or small test) is the situation, the results of the pilot are the complication, and the recommendation involves scaling up
 
-Crafting the Story:
+## Crafting the Story
 
 We’ll be developing an issue tree which can be represented in outline or graphically as a hierarchy.  Outline example:
 
@@ -256,3 +258,7 @@ Slide Format and Presentation Tips
         * Lean a little back in your chair
         * Have a scribe take notes
         * Taking notes with pen and paper denotes the most seniority, followed by tablets, followed by laptops
+
+## Example
+
+See [McKinsey UPS Study](/pdfs/mckinsey-usps-future-bus-model2.pdf)
