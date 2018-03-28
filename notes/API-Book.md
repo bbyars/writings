@@ -42,7 +42,7 @@ Non-resourceful endpoints	/paymentMethods/search	There may be considerations tha
 * Business value
     * Treating as product
 
-![business model canvas](images/api-business-model-canvas.jpg)
+![business model canvas](/images/api-business-model-canvas.jpg)
 
     * Vision statements
 * Design affordances
