@@ -1,4 +1,4 @@
-Internal Platforms
+Software Platforms
 
 ## Comparing to Platform Businesses
 
@@ -42,3 +42,7 @@ The Unix way:
 Tools, not applications
 The ability to recompose tools in ways the creators never imagined
 Outsourced and accelerated innovation
+
+
+Platforms are a means of centralizing expertise, while decentralizing innovation to the customer or user
+from https://www.thoughtworks.com/insights/blog/platform-tech-strategy-three-layers

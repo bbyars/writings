@@ -168,3 +168,105 @@ Causes of market failures:
 Principles of self-governance
 * _internal transparency_
 * _participation_ - crucial to give external stakeholders a voice
+
+## Metrics
+
+Shift away from value stream metrics towards network effects and interactions
+The most important metrics are those that quantify the success of the platform in fostering sustainable repetition of desirable interactions.
+
+Stages:
+* Startup - focus active producers and consumers and successful interactions
+* Critical mass - shift to customer retention and conversion of active users to paying customers
+* Mature - innovation, engagement, new ways to create value, competitive concerns (envelopment)
+
+### Stage 1: Startup
+
+3 main metrics:
+* _liquidity_ - reducing interaction failure through balancing supply and demand. Achieving liquidity is the first and most
+important milestone in the lifecycle.
+    * Track % of listings that lead to interactions within a given time period
+    * On negative side, look for occurrences of illiquidity, for example, when an Uber user opens the app and discovers no
+      car is available. Illiquid situations discourage usage and must be minimized.
+* _matching quality_ - accuracy of the search algorithm and intuitiveness of the navigation tools
+    * sales conversion rates (% of searches that lead to interactions)
+    * aim to correlate interaction percentage for particular users with long-term rate of activity of those users (say, 3 months).
+      e.g. you may find that a majority of users with an interaction rate of 40% during their first week remain active for 3 months
+* trust
+
+Other options:
+* engagement per interaction
+* time between interactions
+* % of active users
+* number of interactions or variants (e.g. Airbnb tracks number of nights booked)
+* interaction capture, esp. when you make money on transactions
+* co-creation (% listings consumed by users) or consumer relevance (meets minimum level of positive response from consumers)
+* market access 
+* producer participation (dating sites measure number of women registered)
+
+### Stage 2: Growth
+
+* producer-to-consumer ratio (adjust to include only active users)
+    * OkCupid tracks ratio of straight women to straight men and works hard to adjust when suboptimal
+* producer
+    * frequency of producer participation
+    * listings created
+    * outcomes achieved
+    * interaction failure
+    * producer fraud
+* consumer
+    * frequency of consumption
+    * searches
+    * rate of conversion to sale
+* combine multiple forms of data into lifetime value (LTV) models
+* interaction conversion rate
+* side switching rate (Airbnb find guests switching to hosts)
+
+## Strategy
+
+Platorms seek exclusive access to essential assets. They discourage multihoming.
+This is why Apple abandoned Flash.
+
+Seek to own the resources whose value is greatest
+
+Winner-take-all forces
+* supply economies of scale
+* strong network effects
+* high multihoming or switching costs
+* lack of niche specialization
+
+## Policy
+
+Externalities - Airbnb is nice for hosts and guests, but what about hosts' neighbors?
+
+Nick Grossman calls for Regulation 2.0, based on open innovation tempered by data-driven transparency and accountability.
+Juxtapose with Regulation 1.0, based on prescriptive rules, certification processes, and gatekeeping.
+
+Traditionally, it was hard for a consumer to gather accurate information about the quality of safety of a taxi driver.
+In a world of abundant information, regulation based on transparency may make more sense. Firms like Uber can be granted
+freedom in exchange for access to their data.
+
+For example, mandated disclosures of food nutrition data, auto safety, and energy efficiency have helped improve
+the quality of those products.
+
+## The Future
+
+Types of business likely to be disrupted:
+
+* Information-intensive
+* Non-scalable gatekeepers
+* Highly fragmented
+* Extreme information asymmetries
+
+Examples:
+
+* Education
+* Health care
+* Energy
+* Finance
+* Logistics / Transportation
+* Labor and professional services
+* Government
+* IoT
+
+
+
