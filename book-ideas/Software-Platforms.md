@@ -6,6 +6,11 @@ Software Platforms
 
 Netflix "paved road"
 
+The traditional approach to IT relied on "integration" for runtime service fulfillment and "tickets" for 
+ construction time service fulfillment.
+Platforms change both of those.
+Integration should be a bad word.
+
 ## Comparing to Platform Businesses
 
 Connecting producers to consumers
