@@ -1,3 +1,7 @@
+Put together sales pitch
+We have ability to associate TW brand with emerging trend (software platforms)
+
+
 Software Platforms
 
 # Section 1: A platform operating model
@@ -5,6 +9,9 @@ Software Platforms
 ## Platform as supporting infrastructure
 
 Netflix "paved road"
+
+coefficient of friction multiplied across portfolio
+also tackling the long tail of risk
 
 The traditional approach to IT relied on "integration" for runtime service fulfillment and "tickets" for 
  construction time service fulfillment.
@@ -82,6 +89,9 @@ How SAFe / portfolio management approaches interfere with a product engineering 
 
 Aim for externalizability (Yegge's rant)
  https://techcrunch.com/2017/05/14/why-amazon-is-eating-the-world/
+ 
+ The ecosystem-based view of value creation is in stark contrast to the traditional resource-based view of value creation,
+ where control of resources was an important source of competitive advantage. (from Platform Scale)
 
 ### Alignment techniques
 
@@ -120,6 +130,21 @@ Approaching legacy strangulation
 * Versioning. This is similar to above but the switching costs are often cheaper. A new version can be, under the hood, a new greenfield product, but with some effort made to maintain some degree of interface compatibility with the old product(s). Customers will expect to have to make some changes to adopt the new version, so there is incentive on the producer to make it compelling to change. Different customers migrate on different timescales
 * Fiat - management forces people to use the new (and funds accordingly). I’ve read that both Google and eBay are on the 5th complete rewrite, top to bottom, of their tech stacks, and heard anecdotally that Google has traditionally mandated usage of new platform over legacy. They also have more money than God, but it seems reasonable to me that this may sometimes be your best option, esp. when you’re in a Bad Spot.
 * Branch by abstraction - you might consider this a strategy within the Strangler approach, but worth calling out. Paul Hammant named the approach to juxtapose with the common developer experience of branching within source code, which maybe doesn’t speak to non-techies as well. The idea is that, in step 1, you create a new interface on top of the old capabilities and convert all clients to the new interface. At this point, the interface still routes to the original “platform” code. Step 2 is to create a competing back end and route some of the interface calls to it, maybe for new functionality, or for functionality you’re looking to remove from the old platform. Lather, rinse, repeat, until all of the capabilities have migrated from old -> new. Step N is to remove the interface entirely; it’s just waste when you’re done. Of course, as with all strangler migrations, nobody actually does that. They get bored with it long before that point.
+
+Zhamak's recommendations (https://martinfowler.com/articles/break-monolith-into-microservices.html)
+- 1st risk: operational maturity. Start with a couple edge services to address
+- 2nd risk: splitting the monolith. 
+
+Paula:
+- Legacy Code:  Any code without tests
+- Legacy Architecture: Any architecture that has not evolved
+- Legacy Systems: Any COTS or custom systems that are not supported
+- Legacy Processes: Any processes that are not measured and improved
+- Legacy Thinking: Belief that existing code, architecture or processes are too complex to understand, and can never be changed
+
+#5 is by far the most challenging legacy issue
+But, remember: Most ‘legacy’ is what currently runs the business and drives revenue.
+
 
 ## Future Areas
 

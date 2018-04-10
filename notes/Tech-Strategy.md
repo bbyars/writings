@@ -1,3 +1,7 @@
+Business Strategy = Where will we play, how will we win
+Digital Strategy = How will we engage and delight our customers
+Technology Strategy = How will we build in a way that balances short term costs with long term cost
+
 QA Value:
 - Preventing bugs (traditional QA)
 - Detecting bugs (traditional monitoring)
