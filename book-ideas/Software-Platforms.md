@@ -6,6 +6,28 @@ Software Platforms
 
 # Section 1: A platform operating model
 
+## Digital Transformation
+
+Principles of Digital Transformation
+* Persistent teams
+* Incremental funding
+* Customer focused instead of functionally focused
+* Learn through doing
+* Adapt with data
+* Strong ownership with architecture / team alignment
+* Backlog ownership
+* Digital Platforms
+
+
+Traditional cost-cutting approaches are like derivatives; transformation like integrals
+ Focus on velocity vs. acceleration
+
+Sourcing strategy = hard to do with knowledge outsourced
+
+Metrics and signals
+"Jeff Bezos believes that most initiatives take five to seven years to pay dividends for Amazon—but positive changes in customer behavior and team problem solving provide early signs that initiatives are on the right track"
+- https://hbr.org/2018/05/agile-at-scale
+
 ## Platform as supporting infrastructure
 
 Netflix "paved road"
@@ -92,6 +114,9 @@ Aim for externalizability (Yegge's rant)
  
  The ecosystem-based view of value creation is in stark contrast to the traditional resource-based view of value creation,
  where control of resources was an important source of competitive advantage. (from Platform Scale)
+ 
+ "Riot Games, the developer of the wildly successful multiplayer online battle arena League of Legends, is redesigning the interfaces between agile teams and support-and-control functions that operate conventionally, such as facilities, finance, and HR. Brandon Hsiung, the product lead for this ongoing initiative, says it involves at least two key steps. One is shifting the functions’ definition of their customers. “Their customers are not their functional bosses, or the CEO, or even the board of directors,” he explains. “Their customers are the development teams they serve, who ultimately serve our players.” The company instituted Net Promoter surveys to collect feedback on whether those customers would recommend the functions to others and made it plain that dissatisfied customers could sometimes hire outside providers. “It’s the last thing we want to happen, but we want to make sure our functions develop world-class capabilities that could compete in a free market,” Hsiung says."
+ - https://hbr.org/2018/05/agile-at-scale
 
 ### Alignment techniques
 

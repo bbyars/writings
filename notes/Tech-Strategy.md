@@ -7,6 +7,11 @@ QA Value:
 - Detecting bugs (traditional monitoring)
 - Remediating bugs (traditional support)
 
+Quality assurance is to testing as weight loss is to testing
+Testing is not quality assurance!
+It's what you do with it that gives you quality
+Often testing is just about understanding
+
 QA strategy incorporates all 3
 - look at logs, alerts, graphs, trends to improve quality of product
 
