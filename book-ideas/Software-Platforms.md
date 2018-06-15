@@ -15,6 +15,7 @@ Principles of Digital Transformation
 * Learn through doing
 * Adapt with data
 * Strong ownership with architecture / team alignment
+    * Organize around the outputs of software delivery
 * Backlog ownership
 * Digital Platforms
 

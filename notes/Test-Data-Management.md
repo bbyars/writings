@@ -4,6 +4,7 @@ Controversial Opinion:
 * Shifting tests to the left removes the need for much of those features
 * Test-case set up with appropriate isolation via SV helps
 * API-enabled TDM helps in integration
+* Simplify your test case to simplify your test data
 
 Goals
 
