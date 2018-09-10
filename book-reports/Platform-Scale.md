@@ -126,7 +126,7 @@ Checklist:
 * What tools and services should the platform provide to enable the interaction?
 * What creation tools and services should the platform provide?
 * What curation and customoization tools and services should the platform provide?
-* What consumption tools and services shoudl the platform provide?
+* What consumption tools and services should the platform provide?
 * How do these tools and services help to 1) pull 2) facilitate 3) match?
 * What currency does the consumer provide to the producer?
 * How does the platform capture some portion of the currency for itself?

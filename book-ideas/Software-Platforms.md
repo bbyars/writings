@@ -29,6 +29,12 @@ Metrics and signals
 "Jeff Bezos believes that most initiatives take five to seven years to pay dividends for Amazon—but positive changes in customer behavior and team problem solving provide early signs that initiatives are on the right track"
 - https://hbr.org/2018/05/agile-at-scale
 
+## Product model
+
+Direct technical integration leads to spaghetti
+Same with extreme coordination
+POs as the "API interface" into teams
+
 ## Platform as supporting infrastructure
 
 Netflix "paved road"
@@ -195,3 +201,4 @@ Allows different ways of drawing teams. Channel teams become service delivery pl
 Using Wardley maps to decide team boundaries
 - Stable = more granular boundaries for scale
 - Cutting edge = own more of the stack for speed
+
