@@ -47,5 +47,4 @@ Outcomes focus
 Communication matters: http://www.businessinsider.com/tesla-elon-musk-how-to-communicate-2017-8
 
 
-
-
+Organize around the axis of change
