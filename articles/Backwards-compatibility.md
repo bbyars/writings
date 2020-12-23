@@ -1,9 +1,11 @@
 
 # Strategies
 
+* Obvious one of add by addition
 * Upcast the incoming request into the new format
     * shellTransform went from a string to an array. If you see an incoming string, 
         transform to an array with one element.
+    * Stack multiple in order (shellTransform / behaviors array) to "stack" upcasts on top of each other    
 * Downcast the interface to accept old format
     * Response injection changed from parameter explosion to a single object parameter; 
     (request, response, logger, state, done) => (config), where the config object contains 
@@ -24,3 +26,11 @@
     * Not happy that I decided to return requests with the delete, etc
         Breaking that default improves the interface for newbies but risks breaking old timers
         Middle ground is add query param to fix behavior. Maybe rename endpoints for new behavior. 
+* Dealing with Hyrum's law
+    * Don't. Stake your claim
+    * 
+
+
+English language compatibility evolution:
+* Begs the question
+* Fulsome
